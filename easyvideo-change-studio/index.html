@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101827" />
+  <title>EasyVideo Change Studio — Keep training up to date</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark"><span></span><span></span><span></span></div>
+        <div class="brand-copy"><strong>easyvideo</strong><small>CHANGE STUDIO</small></div>
+      </div>
+
+      <div class="workspace-switcher">
+        <div class="workspace-avatar">N</div>
+        <div class="workspace-copy"><strong>Northstar People</strong><small>Learning workspace</small></div>
+        <span class="chevron">⌄</span>
+      </div>
+
+      <div class="side-label">WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Workspace navigation">
+        <button class="nav-item" data-view="library"><span class="nav-icon">▤</span><span>Training library</span><span class="nav-count">24</span></button>
+        <button class="nav-item active" data-view="review"><span class="nav-icon">✳</span><span>Change Studio</span><span class="nav-dot"></span></button>
+        <button class="nav-item" data-view="localization"><span class="nav-icon">◎</span><span>Localization QA</span></button>
+        <button class="nav-item" data-view="history"><span class="nav-icon">◷</span><span>Version history</span></button>
+      </nav>
+
+      <div class="sidebar-divider"></div>
+      <div class="side-label">CURRENT PROJECT</div>
+      <div class="project-mini">
+        <div class="mini-thumb"><div class="mini-play">▶</div><div class="mini-lines"><i></i><i></i></div></div>
+        <div class="project-mini-copy"><strong>Remote Work Essentials</strong><small>12 scenes · 4 languages</small></div>
+        <span class="status-dot"></span>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">?</div><div><strong>Need a hand?</strong><small>Explore the 2-minute tour</small></div><span>↗</span></div>
+        <div class="user-row"><div class="user-avatar">KK</div><div class="user-copy"><strong>Kabir Khurana</strong><small>Product workspace</small></div><span class="more">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>Training library</span><b>/</b><span>Remote Work Essentials</span><b>/</b><strong>Change Studio</strong></div>
+        <div class="topbar-actions"><span class="saved-state"><i></i> All changes saved</span><button class="icon-button" aria-label="Notifications">♧<i class="notification-dot"></i></button><div class="top-avatar">KK</div></div>
+      </header>
+
+      <div class="page-wrap">
+        <section class="page-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-spark">✳</span> CONTENT MAINTENANCE</div>
+            <h1>Keep your training <em>up to date.</em></h1>
+            <p>Update existing videos from your latest source material. Change only what needs changing.</p>
+          </div>
+          <div class="heading-right"><span class="demo-pill"><i></i> DEMO WORKSPACE</span><button class="button button-secondary" id="resetDemo">↺ <span>Reset demo</span></button></div>
+        </section>
+
+        <section class="workflow-strip" aria-label="Update workflow">
+          <div class="workflow-step complete"><span class="step-number">✓</span><div><strong>Source added</strong><small>Latest policy uploaded</small></div></div>
+          <div class="workflow-connector done"></div>
+          <div class="workflow-step current" data-step="review"><span class="step-number">2</span><div><strong>Review changes</strong><small>3 scenes need attention</small></div></div>
+          <div class="workflow-connector"></div>
+          <div class="workflow-step" data-step="localization"><span class="step-number">3</span><div><strong>Localization QA</strong><small>4 language versions</small></div></div>
+          <div class="workflow-connector"></div>
+          <div class="workflow-step" data-step="publish"><span class="step-number">4</span><div><strong>Publish update</strong><small>Version 1.1</small></div></div>
+        </section>
+
+        <section class="project-context">
+          <div class="video-cover">
+            <div class="cover-art"><div class="cover-orbit orbit-one"></div><div class="cover-orbit orbit-two"></div><div class="cover-person"><div class="person-head"></div><div class="person-body"></div></div><div class="cover-play">▶</div><span class="cover-chip">LEARNING SERIES</span></div>
+            <div class="cover-duration">04:32</div>
+          </div>
+          <div class="context-main">
+            <div class="context-title-row"><div><div class="context-kicker">EXISTING TRAINING VIDEO <span class="version-tag">v1.0</span></div><h2>Remote Work Essentials</h2><p>Employee onboarding · Owned by People & Culture</p></div><button class="text-button" id="viewOriginal">View original video ↗</button></div>
+            <div class="context-meta"><span><i class="meta-icon">▦</i> 12 scenes</span><span><i class="meta-icon">◎</i> 4 languages</span><span><i class="meta-icon">◷</i> Last updated Aug 18, 2026</span></div>
+            <div class="context-progress"><div class="progress-copy"><span>Update readiness</span><strong id="readinessText">0 of 3 changes reviewed</strong></div><div class="progress-track"><div class="progress-fill" id="readinessBar" style="width:0%"></div></div></div>
+          </div>
+          <div class="context-stats"><div class="stat"><strong id="pendingStat">3</strong><span>Changes detected</span></div><div class="stat"><strong>9</strong><span>Scenes unaffected</span></div><div class="stat"><strong>4</strong><span>Language versions</span></div></div>
+        </section>
+
+        <div class="content-layout">
+          <section class="main-content" id="reviewView">
+            <div class="section-heading-row">
+              <div><div class="section-overline">STEP 02 · SCENE REVIEW</div><h2>Review detected changes <span class="count-bubble" id="changeCount">3</span></h2><p>We compared your latest policy with the source used to create this video.</p></div>
+              <div class="sort-control"><span>Sort by</span><button id="sortChanges">Impact <span>⌄</span></button></div>
+            </div>
+
+            <div class="analysis-banner"><div class="analysis-icon">✳</div><div class="analysis-copy"><strong>We found 3 meaningful changes across 12 scenes.</strong><span>9 scenes are unchanged and will be preserved exactly as they are.</span></div><div class="confidence"><strong>96%</strong><span>match confidence</span></div></div>
+
+            <div class="scene-list" id="sceneList"></div>
+
+            <button class="unchanged-toggle" id="unchangedToggle"><span class="unchanged-check">✓</span><span><strong>9 scenes are unchanged</strong><small>These scenes don't need to be regenerated.</small></span><span class="unchanged-chevron">⌄</span></button>
+            <div class="unchanged-list" id="unchangedList" hidden>
+              <div>01 · Welcome to remote work <span>Unchanged</span></div><div>02 · Setting up your workspace <span>Unchanged</span></div><div>04 · Communication norms <span>Unchanged</span></div><div>05 · Team collaboration <span>Unchanged</span></div><div>06 · Protecting company data <span>Unchanged</span></div><div>08 · Time off and wellbeing <span>Unchanged</span></div><div>10 · Getting support <span>Unchanged</span></div><div>11 · Your first 30 days <span>Unchanged</span></div><div>12 · Key takeaways <span>Unchanged</span></div>
+            </div>
+
+            <div class="review-footer"><div class="footer-note"><span class="shield-icon">◇</span><span>Nothing gets published until you approve it.</span></div><button class="button button-primary" id="goLocalization" disabled>Continue to localization <span>→</span></button></div>
+          </section>
+
+          <aside class="right-rail">
+            <div class="rail-card source-card">
+              <div class="rail-heading"><div><span class="rail-icon purple">⇧</span><strong>Updated source</strong></div><button class="dots-button" aria-label="Source options">•••</button></div>
+              <div class="file-card"><div class="file-icon">PDF</div><div class="file-copy"><strong id="sourceFileName">Remote_Work_Policy_v2.pdf</strong><small id="sourceFileMeta">PDF document · 2.4 MB</small></div><span class="file-check">✓</span></div>
+              <div class="source-compare"><div><span>Original source</span><strong>Remote_Work_Policy_v1.pdf</strong></div><div class="compare-arrow">→</div><div><span>New source</span><strong id="sourceVersionLabel">Policy v2 · Nov 12</strong></div></div>
+              <button class="button button-outline full-width" id="uploadSource">＋ Upload a newer source</button>
+              <input type="file" id="sourceInput" accept=".pdf,.doc,.docx,.ppt,.pptx,.txt" hidden />
+              <p class="micro-copy">PDF, DOCX or PPTX · Up to 100 MB</p>
+            </div>
+
+            <div class="rail-card insight-card">
+              <div class="rail-heading"><div><span class="rail-icon amber">✧</span><strong>AI change summary</strong></div><span class="ai-label">AI GENERATED</span></div>
+              <p>Most updates relate to how employees work from the office and request time away. Your existing introduction and security guidance remain accurate.</p>
+              <div class="insight-tags"><span>Policy update</span><span>Low complexity</span></div>
+              <button class="subtle-link" id="showMethodology">How did AI find these? <span>↗</span></button>
+            </div>
+
+            <div class="rail-card activity-card">
+              <div class="rail-heading"><div><span class="rail-icon green">◷</span><strong>Recent activity</strong></div></div>
+              <div class="activity-item"><div class="activity-avatar ai-avatar">✳</div><div><strong>Change analysis completed</strong><span>EasyVideo AI · Just now</span></div></div>
+              <div class="activity-item"><div class="activity-avatar human-avatar">KK</div><div><strong>You added a new source</strong><span>Nov 13, 2026 · 10:42 AM</span></div></div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="secondary-view" id="localizationView" hidden>
+          <div class="section-heading-row"><div><div class="section-overline">STEP 03 · QUALITY CONTROL</div><h2>Make every version feel native.</h2><p>Review the updated scenes in each language before they go live.</p></div><button class="button button-secondary" id="backToReview">← Back to scene review</button></div>
+          <div class="localization-callout"><div class="callout-icon">◎</div><div><strong>Only changed scenes need localization review.</strong><span>We carried forward existing approvals and flagged the segments affected by your policy update.</span></div></div>
+          <div class="language-grid" id="languageGrid"></div>
+          <div class="review-footer"><div class="footer-note"><span class="shield-icon">◇</span><span>Human review is required before publishing.</span></div><button class="button button-primary" id="openPublish" disabled>Review & publish <span>→</span></button></div>
+        </section>
+
+        <section class="secondary-view" id="historyView" hidden>
+          <div class="section-heading-row"><div><div class="section-overline">PROJECT RECORD</div><h2>Version history</h2><p>Every published update is preserved, with a clear record of what changed.</p></div><button class="button button-secondary" id="historyBack">← Back to project</button></div>
+          <div class="history-panel" id="historyPanel"></div>
+        </section>
+
+        <section class="secondary-view" id="libraryView" hidden>
+          <div class="section-heading-row"><div><div class="section-overline">CONTENT WORKSPACE</div><h2>Training library</h2><p>Keep your team's learning content accurate and ready to use.</p></div><button class="button button-primary" id="openCurrentProject">Open active update →</button></div>
+          <div class="library-feature"><div class="library-thumbnail"><div class="cover-person"><div class="person-head"></div><div class="person-body"></div></div><div class="cover-play">▶</div></div><div><span class="version-tag">IN PROGRESS</span><h3>Remote Work Essentials</h3><p>Employee onboarding · 12 scenes · 4 languages</p><span class="library-status"><i></i> Source update ready for review</span></div><button class="button button-outline" id="libraryOpen">Continue update ↗</button></div>
+          <div class="library-placeholder"><div class="placeholder-icon">▤</div><strong>Your training library, in one place.</strong><span>This demo workspace includes one sample training video so you can explore the update workflow.</span></div>
+        </section>
+
+        <footer class="app-footer"><span>EasyVideo Change Studio <b>·</b> Product concept prototype</span><span>Demo data · No content is published externally</span></footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+
+  <div class="modal-backdrop" id="sceneModal" hidden>
+    <div class="modal scene-modal" role="dialog" aria-modal="true" aria-labelledby="sceneModalTitle">
+      <div class="modal-header"><div><span class="section-overline">SCENE EDITOR · <span id="modalSceneNumber">SCENE 03</span></span><h2 id="sceneModalTitle">Working arrangements</h2></div><button class="modal-close" data-close="sceneModal" aria-label="Close">×</button></div>
+      <div class="modal-body">
+        <div class="scene-preview"><div class="preview-screen"><div class="preview-topline"><span>REMOTE WORK ESSENTIALS</span><span class="preview-scene-tag">SCENE 03 / 12</span></div><div class="preview-art"><div class="preview-window"><div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div><div class="window-content"><div class="window-person"></div><div class="window-lines"><i></i><i></i><i></i></div></div></div><div class="preview-caption" id="previewCaption">A balanced approach to working together.</div></div><div class="preview-controls"><span>▶</span><div class="preview-timeline"><i></i></div><span>00:24 / 00:38</span></div></div></div>
+        <div class="compare-grid"><div class="compare-column previous"><div class="compare-label"><span class="compare-dot old-dot"></span> CURRENT VERSION</div><h3 id="oldSceneHeadline">Two days in the office</h3><p id="oldSceneScript">Our hybrid approach asks every team member to work from the office at least two days each week.</p></div><div class="compare-column suggested"><div class="compare-label"><span class="compare-dot new-dot"></span> AI SUGGESTION <span class="tiny-ai">✳</span></div><input class="headline-input" id="newSceneHeadline" aria-label="Updated scene headline" /><textarea id="newSceneScript" rows="4" aria-label="Updated scene narration"></textarea><div class="editor-hint">AI suggestion based on <strong>Remote_Work_Policy_v2.pdf</strong>. Edit before accepting.</div></div></div>
+        <div class="modal-source-note"><span>↳</span><div><strong>Source reference</strong><p id="sourceReference">Section 2.1 · Office attendance: “Employees are expected to work from an office or hub at least three days per week.”</p></div></div>
+      </div>
+      <div class="modal-footer"><button class="button button-quiet" id="rejectFromModal">Reject suggestion</button><div class="modal-footer-right"><button class="button button-secondary" id="regenerateScene">↻ Regenerate preview</button><button class="button button-primary" id="acceptFromModal">Use this version <span>✓</span></button></div></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="localizationModal" hidden>
+    <div class="modal localization-modal" role="dialog" aria-modal="true" aria-labelledby="languageModalTitle">
+      <div class="modal-header"><div><span class="section-overline">LOCALIZATION QUALITY CHECK</span><h2 id="languageModalTitle">English · Original language</h2></div><button class="modal-close" data-close="localizationModal" aria-label="Close">×</button></div>
+      <div class="localization-modal-body"><div class="localization-modal-intro"><span class="callout-icon">◎</span><div><strong>Review the changed segments.</strong><span id="languageModalNote">Check translated narration and on-screen text before approval.</span></div></div><div id="languageModalSegments" class="translation-segments"></div><div class="translation-disclaimer">Demo content: translations are illustrative and should be reviewed by a fluent speaker before real-world use.</div></div>
+      <div class="modal-footer"><button class="button button-quiet" data-close="localizationModal">Back to languages</button><button class="button button-primary" id="confirmLanguageReview">Approve language review ✓</button></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="publishModal" hidden>
+    <div class="modal publish-modal" role="dialog" aria-modal="true" aria-labelledby="publishTitle">
+      <div class="modal-header"><div><span class="section-overline">FINAL CHECK</span><h2 id="publishTitle">Ready to publish?</h2></div><button class="modal-close" data-close="publishModal" aria-label="Close">×</button></div>
+      <div class="publish-body"><div class="publish-success-icon">✓</div><h3>Remote Work Essentials <span class="version-tag">v1.1</span></h3><p>Your updated training video is ready for its next version.</p><div class="publish-summary"><div><span>Approved scene updates</span><strong id="publishSceneCount">3 of 3</strong></div><div><span>Language versions reviewed</span><strong id="publishLanguageCount">4 of 4</strong></div><div><span>Unaffected scenes preserved</span><strong>9 scenes</strong></div></div><label class="publish-note-label" for="publishNote">Version note</label><textarea id="publishNote" rows="2">Updated remote work and leave policy guidance.</textarea><div class="publish-disclaimer">This is a demo. Publishing will create a local version history entry only; no video or notification will be sent.</div></div>
+      <div class="modal-footer"><button class="button button-quiet" data-close="publishModal">Keep reviewing</button><button class="button button-primary" id="confirmPublish">Publish version 1.1 <span>→</span></button></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="infoModal" hidden>
+    <div class="modal info-modal" role="dialog" aria-modal="true" aria-labelledby="infoTitle"><div class="modal-header"><div><span class="section-overline">HOW IT WORKS</span><h2 id="infoTitle">Grounded in your source material.</h2></div><button class="modal-close" data-close="infoModal">×</button></div><div class="info-body"><div class="method-row"><span>01</span><div><strong>Compare source versions</strong><p>Extract text from the new document and compare it with the source attached to the existing video.</p></div></div><div class="method-row"><span>02</span><div><strong>Map changes to scenes</strong><p>Match changed sections to the scenes, narration and on-screen text they may affect.</p></div></div><div class="method-row"><span>03</span><div><strong>Keep a human in control</strong><p>Show the source reference and suggested edit. A person decides what gets accepted and published.</p></div></div><div class="method-footnote">Prototype note: the analysis in this demo is pre-seeded. It illustrates the intended workflow, not a live AI document comparison.</div></div></div>
+  </div>
+
+  <div class="modal-backdrop" id="videoModal" hidden><div class="modal info-modal" role="dialog" aria-modal="true"><div class="modal-header"><div><span class="section-overline">CURRENT VERSION · 1.0</span><h2>Remote Work Essentials</h2></div><button class="modal-close" data-close="videoModal">×</button></div><div class="video-modal-screen"><div class="cover-person"><div class="person-head"></div><div class="person-body"></div></div><div class="video-modal-copy"><span>REMOTE WORK ESSENTIALS</span><strong>Work better, together.</strong><small>Sample training video · 4 minutes 32 seconds</small></div><div class="video-modal-play">▶</div></div><div class="video-modal-foot">Demo preview · The original video is represented by a visual placeholder.</div></div></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
